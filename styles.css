@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+header {
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 5%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a73e8;
+    display: inline-block;
+}
+
+header nav ul {
+    float: right;
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    color: #333;
+    transition: color 0.3s, background 0.3s;
+}
+
+header nav ul li a:hover {
+    color: white;
+    background: #1a73e8;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 8rem 1rem 4rem;
+    background: linear-gradient(145deg, #e3f2fd, #bbdefb);
+    color: #1a73e8;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.hero img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #1a73e8;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: #0d47a1;
+    transform: translateY(-3px);
+}
+
+/* Main Section */
+main {
+    padding: 2rem 5%;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+section h3 {
+    font-size: 2rem;
+    color: #1a73e8;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.section-image {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.section-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Forms */
+form {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #1a73e8;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(26, 115, 232, 0.4);
+}
+
+form button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #0d47a1;
+}
+
+/* Footer */
+footer {
+    background: #1a73e8;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    section h3 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Course Page Section */
+#course {
+    padding: 3rem 5%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#course h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #1a73e8;
+}
+
+#course .section-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Course Modules Styling */
+.modules h4 {
+    font-size: 2rem;
+    color: #1a73e8;
+    margin-bottom: 1rem;
+}
+
+.module-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.module {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.module h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #1a73e8;
+    margin-bottom: 1rem;
+}
+
+.module p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Testimonials Section */
+/* Testimonials */
+#testimonials {
+    padding: 3rem 5%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+
+/* About Us Section */
+/* Basic Layout */
+
+
+#about-main {
+    padding: 3rem 5%;
+    background-color: #fff;
+    margin-top: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* About Story Section */
+.about-story {
+    margin-bottom: 3rem;
+}
+
+/* Meet the Expert Section */
+.expert-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.expert-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.expert-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 2rem;
+    object-fit: cover;
+}
+
+.expert-details {
+    max-width: 600px;
+}
+
+.expert-details h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.expert-details p {
+    font-size: 1.1rem;
+}
+
+/* Vision & Mission Sections */
+.vision-section, .mission-section {
+    background-color: #e9ecef;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer .social-icons {
+    margin-top: 1rem;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Founder/Team Section */
+.team {
+    margin-top: 2rem;
+}
+
+.team h4 {
+    font-size: 2rem;
+    color: #1a73e8;
+    margin-bottom: 1rem;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Meet the Expert Section */
+.expert-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.expert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.expert-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.expert-details {
+    max-width: 600px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.expert-details p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Mission and Vision Sections */
+.mission, .vision {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+}
+
+footer .social-icons a {
+    margin: 0 10px;
+}
+
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Founder/Team Section */
+.team {
+    margin-top: 2rem;
+}
+
+.team h4 {
+    font-size: 2rem;
+    color: #1a73e8;
+    margin-bottom: 1rem;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    text-align: left;
+}
+/* Consultation Section */
+#consultation {
+    padding: 3rem 5%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#consultation h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a73e8;
+    margin-bottom: 1.5rem;
+}
+
+#consultation .section-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.consultation-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.consultation-form label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.consultation-form input,
+.consultation-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.consultation-form input[type="date"],
+.consultation-form input[type="time"] {
+    color: #555;
+}
+
+.consultation-form button {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.consultation-form button:hover {
+    background-color: #135ab3;
+}
+/* Videos Section */
+#videos {
+    background-color: #f8f9fa;
+    padding: 3rem 5%;
+    text-align: center;
+}
+
+#videos h2 {
+    font-size: 2rem;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.video {
+    width: 100%;
+    max-width: 560px;
+    text-align: center;
+}
+
+.video iframe {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+.video p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+
